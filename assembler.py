@@ -132,8 +132,6 @@ if __name__ == "__main__":
     file_parsed = []
 
     with open(sys.argv[1], "r") as f:
-        if f.read(15) != "--BEGIN VASM--\n":
-            sys.exit("Missing --BEGIN VASM-- header")
         file = f.read().strip().replace(" ", "").replace("\t", "").split("\n")
 
         for x in file:
