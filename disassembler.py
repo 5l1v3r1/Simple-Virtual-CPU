@@ -11,7 +11,7 @@ data   = Path(sys.argv[1]).read_bytes() # File to disassemble
 isa = {
    "0": { "ins":   "hlt", "len": 1, "ops": 1, "bStruct":   "<B" },
    "1": { "ins":   "mov", "len": 3, "ops": 3, "bStruct":  "<3B" },
-   "2": { "ins":   "xor", "len": 3, "ops": 2, "bStruct":  "<3B" },
+   "2": { "ins":   "xor", "len": 3, "ops": 3, "bStruct":  "<3B" },
    "3": { "ins":   "add", "len": 3, "ops": 3, "bStruct":  "<3B" },
    "4": { "ins": "store", "len": 6, "ops": 3, "bStruct": "<2Bi" },
    "5": { "ins":  "push", "len": 2, "ops": 2, "bStruct":  "<2B" },
